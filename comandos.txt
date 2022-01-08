@@ -1,0 +1,7 @@
+selectTable:ages:age_range,id  relationship_type,model_name,field1,field2,field3
+"relation": "mt1,Writer,writer_id,id"
+1tm,Age
+ php artisan infyom:scaffold Age --fieldsFile=resources/model_schemas/Age.json
+ php artisan infyom:scaffold SocielNetwork --fieldsFile=resources/model_schemas/SocielNetwork.json
+
+  php artisan infyom:scaffold Quiz --fieldsFile=resources/model_schemas/Quiz.json

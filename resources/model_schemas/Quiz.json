@@ -61,8 +61,8 @@
     },
     {
         "name": "average_time",
-        "dbType": "intger",
-        "htmlType": "selectTable:average_times:time_range,id",
+        "dbType": "time",
+        "htmlType": "text",
         "validations": "required",
         "searchable": true,
         "fillable": true,
@@ -97,14 +97,11 @@
     },
     {
         "type": "relation",
-        "relation": "1tm,Ages"
+        "relation": "mt1,Ages"
     },
+
     {
         "type": "relation",
-        "relation": "1tm,AverageTime"
-    },
-    {
-        "type": "relation",
-        "relation": "1tm,SocielNetwork"
+        "relation": "mt1,SocielNetwork"
     }
 ]
