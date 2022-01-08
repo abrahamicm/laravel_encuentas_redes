@@ -38,4 +38,3 @@ Route::resource('ages', App\Http\Controllers\AgeController::class);
 Route::resource('socielNetworks', App\Http\Controllers\SocielNetworkController::class);
 
 
-Route::resource('quizzes', App\Http\Controllers\QuizController::class);

@@ -21,11 +21,4 @@
 </li>
 
 
-<li class="nav-item">
-    <a href="{{ route('quizzes.index') }}"
-       class="nav-link {{ Request::is('quizzes*') ? 'active' : '' }}">
-        <p>Quizzes</p>
-    </a>
-</li>
-
 
