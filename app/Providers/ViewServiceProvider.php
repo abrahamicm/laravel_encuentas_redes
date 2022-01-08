@@ -3,7 +3,7 @@
 namespace App\Providers;
 
 
-use App\Models\SocialNetwork;
+use App\Models\SocielNetwork;
 use App\Models\AverageTime;
 use App\Models\Age;
 
@@ -29,6 +29,14 @@ class ViewServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        View::composer(['quizzes.fields'], function ($view) {
+            $social_networkItems = SocielNetwork::pluck('name','id')->toArray();
+            $view->with('social_networkItems', $social_networkItems);
+        });
+        View::composer(['quizzes.fields'], function ($view) {
+            $ageItems = Age::pluck('age_range','id')->toArray();
+            $view->with('ageItems', $ageItems);
+        });
 
   
     }
