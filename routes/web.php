@@ -24,3 +24,13 @@ Auth::routes();
 Route::get('/home', [
     HomeController::class, 'index'
 ])->name('home');
+
+
+Route::resource('averageTimes', App\Http\Controllers\AverageTimeController::class);
+
+
+
+
+
+
+Route::resource('ages', App\Http\Controllers\AgeController::class);
