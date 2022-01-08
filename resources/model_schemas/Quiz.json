@@ -2,8 +2,8 @@
     {
         "name": "id",
         "dbType": "id",
-        "htmlType": null,
-        "validations": null,
+        "htmlType": "",
+        "validations": "",
         "searchable": false,
         "fillable": false,
         "primary": true,
@@ -33,8 +33,7 @@
         "primary": false,
         "inForm": true,
         "inIndex": true,
-        "inView": true,
-        "relation": "1tm,Ages"
+        "inView": true
     },
     {
         "name": "gender",
@@ -51,7 +50,7 @@
     {
         "name": "social_network_id",
         "dbType": "integer",
-        "htmlType": "selectTable:ages:age_range,id",
+        "htmlType": "selectTable:social_networks:name,id",
         "validations": "required",
         "searchable": true,
         "fillable": true,
@@ -63,21 +62,20 @@
     {
         "name": "average_time",
         "dbType": "intger",
-        "htmlType": "selectTable:average_times:age_range,id",
+        "htmlType": "selectTable:average_times:time_range,id",
         "validations": "required",
         "searchable": true,
         "fillable": true,
         "primary": false,
         "inForm": true,
         "inIndex": true,
-        "inView": true,
-        "relation": "1tm,AverageTime"
+        "inView": true
     },
     {
         "name": "created_at",
         "dbType": "timestamp",
-        "htmlType": null,
-        "validations": null,
+        "htmlType": "",
+        "validations": "",
         "searchable": false,
         "fillable": false,
         "primary": false,
@@ -88,13 +86,25 @@
     {
         "name": "updated_at",
         "dbType": "timestamp",
-        "htmlType": null,
-        "validations": null,
+        "htmlType": "",
+        "validations": "",
         "searchable": false,
         "fillable": false,
         "primary": false,
         "inForm": false,
         "inIndex": false,
         "inView": true
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,Ages"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,AverageTime"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,SocielNetwork"
     }
 ]
