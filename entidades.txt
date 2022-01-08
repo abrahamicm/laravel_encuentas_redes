@@ -1,0 +1,17 @@
+entidades
+quiz
+	
+	email
+    age
+	gender
+	social_network
+	average_time
+
+social_network
+	name
+
+age
+	age_range
+
+average_time
+	time_range

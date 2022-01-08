@@ -16,3 +16,11 @@
 </li>
 
 
+<li class="nav-item">
+    <a href="{{ route('socialNetworks.index') }}"
+       class="nav-link {{ Request::is('socialNetworks*') ? 'active' : '' }}">
+        <p>Social Networks</p>
+    </a>
+</li>
+
+
