@@ -2,12 +2,14 @@ selectTable:ages:age_range,id  relationship_type,model_name,field1,field2,field3
 "relation": "mt1,Writer,writer_id,id"
 1tm,Age
 
-
------Rollback-----------------
+-----migrations--------------------------------------------
+php artisan migrate:fresh --seed
+-----Rollback----------------------------------------------
 php artisan infyom:rollback Quiz scaffold
 php artisan infyom:rollback Age scaffold
 php artisan infyom:rollback AverageTime scaffold
------ Modelos from files------
+php artisan infyom:rollback SocielNetwork scaffold
+----- Modelos from files------------------------------------
 php artisan infyom:scaffold Age --fieldsFile=resources/model_schemas/Age.json
-php artisan infyom:scaffold SocielNetwork --fieldsFile=resources/model_schemas/SocielNetwork.json
+php artisan infyom:scaffold SocielNetwork --fieldsFile=resources/model_schemas/SocialNetwork.json
 php artisan infyom:scaffold Quiz --fieldsFile=resources/model_schemas/Quiz.json
